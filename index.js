@@ -11,10 +11,6 @@ app.get('/', (req, res) => {
   res.send('this is my api running..')
 })
 
-app.get('/about', (req, res) => {
-  res.send('about page')
-})
-
 app.get('/users', (req, res) => {
   res.json(users)
 })
