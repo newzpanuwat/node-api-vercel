@@ -26,16 +26,4 @@ app.get("/blogs", (req, res) => {
   res.send(blogsAll);
 });
 
-app.get("/users", (req, res) => {
-  res.json(users);
-});
-
-app.get("/portPhoto", (req, res) => {
-  res.json(portPhoto);
-});
-
-app.get("/avatarPhoto", (req, res) => {
-  res.json(avatarPhoto);
-});
-
 module.exports = app;

@@ -2,5 +2,6 @@
 
 #### Routing
 
-- GET / -> show status server is runing
-- GET /users -> Get all users
+- GET /bio -> My bio
+- GET /experiences -> All experiences
+- GET /blogs -> My blogs (Medium)
