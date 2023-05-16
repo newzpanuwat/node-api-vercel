@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { users, bio, expLists, blogsAll, portPhoto, avatarPhoto } = require("./data");
+const { bio, expLists, blogsAll } = require("./data");
 const app = express();
 app.use(cors());
 
@@ -10,19 +10,19 @@ app.listen(PORT, () => {
   console.log("listening port", PORT);
 });
 
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   res.send({ data: "API is running" });
 });
 
-app.get("/bio", (req, res) => {
+app.get("/bio", (_, res) => {
   res.send(bio);
 });
 
-app.get("/experiences", (req, res) => {
+app.get("/experiences", (_, res) => {
   res.send(expLists);
 });
 
-app.get("/blogs", (req, res) => {
+app.get("/blogs", (_, res) => {
   res.send(blogsAll);
 });
 
