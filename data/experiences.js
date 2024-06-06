@@ -2,7 +2,7 @@ const expLists = [
   {
     id: 13,
     projectName: "Digital Services",
-    companyName: "True IDC",
+    companyName: "Extend-IT OS at SCB Digital Services",
     position: "Full Stack Developer",
     companyColor: "purple.500",
     frontend: "React JS",
